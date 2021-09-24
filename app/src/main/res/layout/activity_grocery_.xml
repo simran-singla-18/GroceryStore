@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Grocery_Activity">
+    <ImageView
+        android:id="@+id/fullimage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/pulses"></ImageView>
+    <TextView
+        android:id="@+id/txtname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_below="@id/fullimage"></TextView>
+    <TextView
+        android:id="@+id/quantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1kg"
+        android:textSize="14sp"
+        android:layout_below="@id/txtname"></TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Price"
+        android:textSize="20dp"
+        android:layout_toRightOf="@id/quantity"
+        android:layout_below="@id/txtname"></TextView>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="14sp"
+        android:backgroundTint="#1CD958"
+        android:layout_marginTop="300dp"
+        android:layout_below="@id/quantity"
+        android:text="Add to Basket"></Button>
+
+</RelativeLayout>
